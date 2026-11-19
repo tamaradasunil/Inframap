@@ -15,4 +15,6 @@ Listings, service providers, material offers and quote requests, favorites, demo
 
 This is a clean, separate Expo project copy. Start it with `npm install` followed by `npx expo start --tunnel --clear --go`.
 
+APK releases use the user-facing app version in `app.json` (`expo.version`, currently `1.0.0`) and an Android `versionCode` starting at `1`. EAS automatically increments `versionCode` for each `preview` APK build. Increase `expo.version` manually for a user-facing release change (for example, `1.0.0` to `1.1.0`); each build retains its own incremented Android code.
+
 Navigation uses five bottom buttons: Explore, Favorites, Post, Enquiries, and Services. Services opens a simple landing page with three choices: Services, Materials, and Build. Each choice opens its detailed section with a back button. Profile remains available from the top.
