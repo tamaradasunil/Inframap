@@ -36,6 +36,7 @@ yarn-error.*
 # typescript
 *.tsbuildinfo
 
-# generated native folders
-/ios
-/android
+# Root android/ holds the versioned Expo source copy. Ignore other generated
+# root Android output while allowing that source folder to be tracked.
+/android/*
+!/android/1.0.0/

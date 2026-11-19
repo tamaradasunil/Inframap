@@ -6,9 +6,14 @@
   "build": {
     "preview": {
       "distribution": "internal",
+      "autoIncrement": "versionCode",
       "android": {
         "buildType": "apk"
       }
+    },
+    "preview-ios": {
+      "distribution": "internal",
+      "autoIncrement": "buildNumber"
     },
     "production": {
       "android": {
