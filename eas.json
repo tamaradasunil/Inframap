@@ -11,6 +11,10 @@
         "buildType": "apk"
       }
     },
+    "preview-ios": {
+      "distribution": "internal",
+      "autoIncrement": "buildNumber"
+    },
     "production": {
       "android": {
         "buildType": "app-bundle"

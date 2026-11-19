@@ -17,4 +17,6 @@ This is a clean, separate Expo project copy. Start it with `npm install` followe
 
 APK releases use the user-facing app version in `app.json` (`expo.version`, currently `1.0.0`) and an Android `versionCode` starting at `1`. EAS automatically increments `versionCode` for each `preview` APK build. Increase `expo.version` manually for a user-facing release change (for example, `1.0.0` to `1.1.0`); each build retains its own incremented Android code.
 
+For iOS, use `npx eas-cli build --platform ios --profile preview-ios`. The profile builds an internally distributed IPA and increments `ios.buildNumber`; the bundle identifier is `com.inframap.preview`. iOS uses Apple Maps until an iOS Google Maps API key is configured. Internal device builds require Apple signing credentials and an Apple Developer account; iOS Simulator builds do not install on physical iPhones.
+
 Navigation uses five bottom buttons: Explore, Favorites, Post, Enquiries, and Services. Services opens a simple landing page with three choices: Services, Materials, and Build. Each choice opens its detailed section with a back button. Profile remains available from the top.
