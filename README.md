@@ -20,3 +20,7 @@ APK releases use the user-facing app version in `app.json` (`expo.version`, curr
 For iOS, use `npx eas-cli build --platform ios --profile preview-ios`. The profile builds an internally distributed IPA and increments `ios.buildNumber`; the bundle identifier is `com.inframap.preview`. iOS uses Apple Maps until an iOS Google Maps API key is configured. Internal device builds require Apple signing credentials and an Apple Developer account; iOS Simulator builds do not install on physical iPhones.
 
 Navigation uses five bottom buttons: Explore, Favorites, Post, Enquiries, and Services. Services opens a simple landing page with three choices: Services, Materials, and Build. Each choice opens its detailed section with a back button. Profile remains available from the top.
+
+## Platform release folders
+
+`android/1.0.0` and `IOS/1.0.0` each contain a complete copy of the Expo project for that platform version. Install dependencies in the desired version folder, then build Android with `npx eas-cli build --platform android --profile preview` or iOS with `npx eas-cli build --platform ios --profile preview-ios`. Keep future platform releases in new version folders so earlier source snapshots remain available.
